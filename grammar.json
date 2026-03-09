@@ -1,0 +1,933 @@
+{
+  "metadata": {
+    "titre": "Grammaire du mooré — MALM",
+    "langue": "mooré (moore)",
+    "pays": "Burkina Faso",
+    "sources": {
+      "SRC-11": "NIKIEMA Norbert, 'Différences de comportement et rapports entre consonne finale de radical CVC et consonne initiale de suffixe en mooré', Studies in African Linguistics 18(2), 1987",
+      "SRC-13": "Peace Corps Burkina Faso, An Introduction to the Moore Language, 2006",
+      "SRC-14": "ZONGO Bernard, Petit manuel du mooré pratique",
+      "SRC-17": "Dictionnaire Mooré ↔ Français ↔ Anglais (2020, 368 pages)",
+      "SRC-21": "Fatoumata Ouoba Kabore, Morphological Analyzer for Mooré (Apertium), Uppsala University, 2025"
+    },
+    "date_extraction": "2026-03-09",
+    "statut": "[EXTRAIT]",
+    "note": "33 règles grammaticales R01-R33, inventaire phonologique complet, 56 classificateurs nominaux formels + 15 thématiques, paradigme pronominal complet.",
+    "total_règles": 33,
+    "total_classificateurs_formels": 56,
+    "total_classificateurs_thématiques": 15
+  },
+  "phonologie": {
+    "voyelles_orales": [
+      "a",
+      "e",
+      "ɛ",
+      "i",
+      "ɩ",
+      "o",
+      "ɔ",
+      "u",
+      "ʋ"
+    ],
+    "voyelles_nasales": [
+      "ã",
+      "ẽ",
+      "ĩ",
+      "õ",
+      "ũ"
+    ],
+    "voyelles_longues": [
+      "aa",
+      "ee",
+      "ii",
+      "oo",
+      "uu",
+      "ʋʋ",
+      "ɩɩ",
+      "ãa",
+      "ẽe",
+      "ĩi",
+      "õo",
+      "ũu"
+    ],
+    "diphtongues": [
+      "ao",
+      "oe",
+      "oa",
+      "ue"
+    ],
+    "consonnes": [
+      "b",
+      "d",
+      "f",
+      "g",
+      "k",
+      "l",
+      "m",
+      "n",
+      "p",
+      "r",
+      "s",
+      "t",
+      "w",
+      "y",
+      "z"
+    ],
+    "consonnes_complexes": [
+      "gb",
+      "kp",
+      "nd",
+      "mb",
+      "ng"
+    ],
+    "tons": {
+      "haut": "noté ́ (accent aigu), ex: á, ó",
+      "bas": "noté ` (accent grave), ex: à, è",
+      "downstep": "noté ! — abaissement d'un ton haut après ton bas",
+      "note": "Trois tons fonctionnels. Le ton distingue les homophones (R13) : ~400 paires minimales documentées dans SRC-17."
+    },
+    "note": "H n'est pas un phonème natif productif. Quasi-totalité des mots en H = emprunts (arabe, haoussa, français)."
+  },
+  "règles": [
+    {
+      "id": "R01",
+      "domaine": "phonologie/harmonie_vocalique",
+      "titre": "Harmonie vocalique",
+      "énoncé": "Les voyelles suffixales e, i, o s'harmonisent avec la voyelle radicale : elles deviennent [i], [ɩ], [u] quand la voyelle radicale est haute.",
+      "exemple": "`bʋʋg+e` → `bʋʋgi` (chèvre+suff) — voyelle haute ʋ entraîne harmonisation",
+      "source": "SRC-11"
+    },
+    {
+      "id": "R02",
+      "domaine": "phonologie/voyelles",
+      "titre": "Introduction de voyelles suffixales dans le radical",
+      "énoncé": "Introduction de `a` après les voyelles radicales `e` et `o`. La voyelle `a` s'insère entre le radical et le suffixe dans certains contextes morphologiques.",
+      "exemple": "`ko+a` → `koa` (bouche+déf)",
+      "source": "SRC-11"
+    },
+    {
+      "id": "R03",
+      "domaine": "phonologie/insertion",
+      "titre": "Insertion de e",
+      "énoncé": "`e` est inséré entre une voyelle arrière (u, ʋ, o) et une palatale (y, ɲ) pour éviter un hiatus consonantique.",
+      "exemple": "`gʋ+ya` → `gʋeya`",
+      "source": "SRC-11"
+    },
+    {
+      "id": "R04",
+      "domaine": "phonologie/diphtongaison",
+      "titre": "Coalescences et diphtongaisons",
+      "énoncé": "Réductions vocaliques par dialecte. `iu` → [u] en central, diphtongue [iu] en saremde. Séquences `eo` → coalescence.",
+      "exemple": "`iu` → [u] (dialecte central)",
+      "source": "SRC-11"
+    },
+    {
+      "id": "R05",
+      "domaine": "phonologie/allongement",
+      "titre": "Allongement vocalique",
+      "énoncé": "Une voyelle radicale s'allonge devant une consonne suffixale. Explique `baaga` : `bag+a` → `baaga`.",
+      "exemple": "`bag+a` → `baaga` (chien+déf)",
+      "source": "SRC-11"
+    },
+    {
+      "id": "R06",
+      "domaine": "phonologie/élision",
+      "titre": "Élision vocalique",
+      "énoncé": "La voyelle suffixale s'élide devant le segment suivant (sauf à la pause). Phénomène de sandhi externe.",
+      "exemple": "`baagã` en isolation → `baag` devant consonne initiale du mot suivant",
+      "source": "SRC-11"
+    },
+    {
+      "id": "R07",
+      "domaine": "phonologie/épenthèse",
+      "titre": "Insertion de voyelle de soutien e",
+      "énoncé": "Une consonne en coda syllabique reçoit une voyelle `e` de soutien pour respecter la structure syllabique CV dominante du mooré.",
+      "exemple": "`gom+r+e` → `gómde` (parole)",
+      "source": "SRC-11"
+    },
+    {
+      "id": "R08",
+      "domaine": "phonologie/alternances_consonantiques",
+      "titre": "Alternances l ↔ n",
+      "énoncé": "`l` → `n` après nasale. Alternance phonologiquement conditionnée. Diffère entre dialecte central et saremde.",
+      "exemple": "Forme centrale `l` → forme saremde `n` dans environnements nasaux",
+      "source": "SRC-11"
+    },
+    {
+      "id": "R09",
+      "domaine": "phonologie/alternances_consonantiques",
+      "titre": "Alternances r ↔ d, r ↔ l",
+      "énoncé": "`r` → `d` après nasale. `r` → `l` dans certains dialectes. Documenté sur ~400 paires minimales.",
+      "exemple": "`gom+re` → `gómde` (parole) — r → d",
+      "source": "SRC-11"
+    },
+    {
+      "id": "R10",
+      "domaine": "phonologie/consonnes",
+      "titre": "Assourdissement d'occlusives sonores",
+      "énoncé": "Géminées sonores bb·dd·gg → pp·tt·kk, sauf après nasale homorganique.",
+      "exemple": "`b+b` → `pp` (sauf après `mb` : nasale protège la sonorité)",
+      "source": "SRC-11"
+    },
+    {
+      "id": "R11",
+      "domaine": "phonologie/tons",
+      "titre": "Polarisation tonale",
+      "énoncé": "Le ton du suffixe classificatoire est systématiquement l'opposé du ton du radical. Radical haut → suffixe bas. Radical bas → suffixe haut.",
+      "exemple": "`náo` (haut) + suffixe → `naore` (bas)",
+      "source": "SRC-11"
+    },
+    {
+      "id": "R12",
+      "domaine": "phonologie/tons",
+      "titre": "Relèvement du ton radical",
+      "énoncé": "Certains radicaux à ton bas se relèvent (spreading tonal) au contact d'un suffixe haut.",
+      "exemple": "Radical bas + suffixe haut → montée tonale à la frontière morphologique",
+      "source": "SRC-11"
+    },
+    {
+      "id": "R13",
+      "domaine": "phonologie/tons",
+      "titre": "Downstep",
+      "énoncé": "(a) HBH → HB!H — abaissement du 2ème ton haut après un ton bas. (b) Ton bas encadré de tons hauts → relèvement partiel. Le ton distingue les homophones : ~400 paires minimales dans SRC-17.",
+      "exemple": "Séquence HBH → H!H (le second H plus bas)",
+      "source": "SRC-11"
+    },
+    {
+      "id": "R14",
+      "domaine": "morphologie/redoublement",
+      "titre": "Adverbes d'intensité par redoublement",
+      "énoncé": "Le redoublement d'une base crée un adverbe d'intensité. Toujours expressif, jamais grammatical pur.",
+      "exemple": "`zam-zam` (flambant neuf), `zem-zem` (doucement), `zugl-zugli` (secousse forte)",
+      "source": "SRC-17"
+    },
+    {
+      "id": "R15",
+      "domaine": "morphologie/isomorphisme",
+      "titre": "Isomorphisme zéro/gratuit/ordinaire (zaal-)",
+      "énoncé": "La racine `zaal-` désigne le néant numérique (zéro), le don non sollicité (gratuit) et l'ordinaire (sans valeur ajoutée). Logique culturelle : ce qui ne coûte rien = ce qui ne vaut rien.",
+      "exemple": "`zaala` = zéro / gratuit / ordinaire — même racine, trois valeurs",
+      "source": "SRC-17"
+    },
+    {
+      "id": "R16",
+      "domaine": "morphologie/redoublement",
+      "titre": "Redoublement = réciprocité symétrique absolue",
+      "énoncé": "Le redoublement d'un verbe d'action = l'action rendue identiquement. Réciprocité parfaite. Complète R14 (même mécanisme, deux fonctions).",
+      "exemple": "`teke teke` = don réciproque simultané (chacun donne à l'autre)",
+      "source": "SRC-17"
+    },
+    {
+      "id": "R17",
+      "domaine": "morphologie/nominal",
+      "titre": "Génitif par ka- + tête nominale définie",
+      "énoncé": "Le génitif mooré = `ka-` + tête nominale définie + nom possédé défini. Structure : [possesseur]-`ka`-[possédé]. L'ordre des mots + `ka-` marque la possession.",
+      "exemple": "`roog ka soaba` = la maison de son propriétaire",
+      "source": "SRC-21"
+    },
+    {
+      "id": "R18",
+      "domaine": "morphologie/aspect",
+      "titre": "Marqueurs aspectuels -d-/-t-",
+      "énoncé": "L'inaccompli = insertion de `-d-` ou `-t-` entre la racine verbale et la terminaison. L'accompli = morphème zéro (-ø-). Aspect encodé dans la morphologie interne du verbe.",
+      "exemple": "`A wʋmame` (il a entendu — accompli) vs `A wʋmdame` (il entend — inaccompli)",
+      "source": "SRC-17/SRC-21"
+    },
+    {
+      "id": "R19",
+      "domaine": "morphologie/verbal",
+      "titre": "Morphème assertif -la post-complément",
+      "énoncé": "Quand le verbe suit un complément antéposé (topicalisation ou OVS), il prend le morphème `-la`. Sans complément antéposé : `-me`/`-yã`. Position syntaxique du complément → changement morphologique du verbe.",
+      "exemple": "`A pãb-a-la` = il l'a battu (complément antéposé) vs `A pãba` (SVO normal)",
+      "source": "SRC-21"
+    },
+    {
+      "id": "R20",
+      "domaine": "morphologie/verbal",
+      "titre": "Structure syllabique verbale de base",
+      "énoncé": "Les verbes mooré suivent les structures CV, CVV ou CVC+V. Explique les alternances consonantiques (R08-R10) et l'insertion de voyelle de soutien (R07).",
+      "exemple": "`wa` (venir) = CV ; `rɩɩm` (manger+acc) = CVVC",
+      "source": "SRC-21"
+    },
+    {
+      "id": "R21",
+      "domaine": "morphologie/pronoms",
+      "titre": "Variation pronominale selon position syntaxique",
+      "énoncé": "La forme pronominale varie selon la position syntaxique, non selon la fonction grammaticale seule. Même pronom = 3 formes minimales selon sa place dans l'énoncé.",
+      "exemple": "`m` (sujet) vs `mam` (objet) vs `maam` (emphatique/final) — 1ère personne",
+      "source": "SRC-21"
+    },
+    {
+      "id": "R22",
+      "domaine": "syntaxe/ordre_des_mots",
+      "titre": "Ordre SVO de base",
+      "énoncé": "Mooré = Subject-Verb-Object. Ordre : S + (particule temporelle) + V + (morphème aspectuel) + O. Les topicalisations et focus peuvent modifier cet ordre (→ R19).",
+      "exemple": "`M dɩta mui` = Je mange du riz (S-V-O)",
+      "source": "SRC-17/SRC-21"
+    },
+    {
+      "id": "R23",
+      "domaine": "morphologie/nominal",
+      "titre": "7 genres nominaux formels sans ancrage sémantique",
+      "énoncé": "Le mooré a 7 genres (classes nominales) mais ils ne correspondent pas à des catégories sémantiques stables. Genre = formel (suffixe classificatoire), non sémantique (pas de masculin/féminin/neutre).",
+      "exemple": "Suffixes de genre : -ga, -re, -go, -ba, -da, -ma, -a (entre autres)",
+      "source": "SRC-21"
+    },
+    {
+      "id": "R24",
+      "domaine": "phonologie/tons",
+      "titre": "Polarité tonale des suffixes nominaux",
+      "énoncé": "Le ton du suffixe nominal = systématiquement opposé au ton de la racine. Racine haute → suffixe bas. Racine basse → suffixe haut. Complémentaire de R11.",
+      "exemple": "`náo` (haut) → `naóre` (bas) ; `nàm` (bas) → `námde` (haut)",
+      "source": "SRC-21"
+    },
+    {
+      "id": "R25",
+      "domaine": "syntaxe/adjectif",
+      "titre": "Adjectif post-nominal obligatoire",
+      "énoncé": "L'adjectif suit toujours le nom en mooré. Accord en nombre avec le nom. Pas d'adjectif antéposé en position attributive.",
+      "exemple": "`zak pèelga` = une maison blanche (litt. maison blanche) ; `zakse pèelse` = les maisons blanches",
+      "source": "SRC-21"
+    },
+    {
+      "id": "R26",
+      "domaine": "morphologie/adjectif",
+      "titre": "Adjectif dérivé du verbe",
+      "énoncé": "Les adjectifs mooré sont souvent des nominalisations verbales. La couleur = un processus, non un état. Isomorphisme couleur/action du corpus.",
+      "exemple": "`pèelga` (blanc) ← `péelge` (blanchir) ; `zẽege²` (rougir/attiser le feu) — même radical",
+      "source": "SRC-21"
+    },
+    {
+      "id": "R27",
+      "domaine": "morphologie/pronoms",
+      "titre": "Paradigme pronominal tripartite",
+      "énoncé": "Chaque pronom mooré = 3 formes : sujet / objet / emphatique. La morphologie pronominale encode la structure informationnelle (topique/focus).",
+      "paradigme": {
+        "1sg": {
+          "sujet": "m",
+          "objet": "mam",
+          "emphatique": "maam"
+        },
+        "2sg": {
+          "sujet": "f",
+          "objet": "fo",
+          "emphatique": "foom"
+        },
+        "3sg": {
+          "sujet": "a",
+          "objet": "yẽ",
+          "emphatique": "yẽn da"
+        },
+        "1pl": {
+          "sujet": "tõnd",
+          "objet": "tõndo",
+          "emphatique": "tõndo"
+        },
+        "2pl": {
+          "sujet": "y",
+          "objet": "yãmb",
+          "emphatique": "yãmba"
+        },
+        "3pl": {
+          "sujet": "b",
+          "objet": "bãmb",
+          "emphatique": "bãmba"
+        }
+      },
+      "exemple": "`f` (sujet) vs `fo` (objet) vs `foom` (emphatique) — 2ème personne sg.",
+      "source": "SRC-21"
+    },
+    {
+      "id": "R28",
+      "domaine": "morphologie/définitude",
+      "titre": "Définitude et focus contrastif : -wã/-ã",
+      "énoncé": "Le morphème `-wã`/`-ã` marque la définitude ET le focus contrastif selon le contexte. La grammaire mooré encode la structure informationnelle dans la morphologie nominale.",
+      "exemple": "`baaga` (un chien) vs `baagã` (le chien / CE chien — focus contrastif)",
+      "source": "SRC-21"
+    },
+    {
+      "id": "R29",
+      "domaine": "syntaxe/verbes_sériels",
+      "titre": "Constructions à verbes sériels (SVCs)",
+      "énoncé": "Le mooré possède des constructions à verbes sériels : plusieurs verbes sans conjonction, partageant un sujet commun. Parmi les structures les plus complexes computationnellement.",
+      "exemple": "`A wa zãmse n kẽnd` = Il est venu apprendre et partir (séquence verbale sans conjonction)",
+      "source": "SRC-21"
+    },
+    {
+      "id": "R30",
+      "domaine": "phonologie/tons",
+      "titre": "Modifications tonales contextuelles",
+      "énoncé": "Le ton d'un morphème peut changer selon sa position dans l'énoncé. Les tons ne sont pas fixes mais modulés par le contexte prosodique.",
+      "exemple": "Même lexème = ton différent selon position initiale, médiale ou finale d'énoncé",
+      "source": "SRC-21"
+    },
+    {
+      "id": "R31",
+      "domaine": "morphologie/nominal",
+      "titre": "Troncation nominale en contexte syntaxique",
+      "énoncé": "Les noms perdent leur voyelle finale dans certains contextes syntaxiques : sujet non focalisé, complément d'objet direct, composition nominale.",
+      "exemple": "`baag ka wa ka ye` = Un chien n'est pas venu ici — `baag` forme tronquée de `baaga`",
+      "source": "SRC-21"
+    },
+    {
+      "id": "R32",
+      "domaine": "morphologie/nominal",
+      "titre": "Distribution des formes nominales selon contexte",
+      "énoncé": "Distribution systématique des formes nominales selon le rôle syntaxique.",
+      "paradigme": {
+        "sujet_défini": {
+          "forme": "baagã",
+          "exemple": "Baagã n waata (Le chien est venu)"
+        },
+        "sujet_indéfini": {
+          "forme": "baaga",
+          "exemple": "Baaga n waata (Un chien est venu)"
+        },
+        "complément_direct": {
+          "forme": "baag",
+          "exemple": "M yã baag (J'ai vu un chien)"
+        }
+      },
+      "exemple": "`Baagã n waata` (sujet défini) vs `M yã baag` (objet tronqué)",
+      "source": "SRC-21"
+    },
+    {
+      "id": "R33",
+      "domaine": "syntaxe/négation",
+      "titre": "Négation discontinue ka...ye",
+      "énoncé": "La négation mooré est discontinue : `ka` (préverbal) + `ye` (postverbal). Structure : S + `ka` + V + O + `ye`. Les deux morphèmes sont obligatoires et co-dépendants.",
+      "exemple": "`baag ka wa ka ye` = Un chien n'est pas venu ici",
+      "source": "SRC-17/SRC-21"
+    }
+  ],
+  "paradigmes_verbaux": {
+    "note": "Source principale : SRC-21 (Kabore 2025, tableau 2.4)",
+    "formes": [
+      {
+        "forme": "accompli assertif",
+        "morphème": "-ø-ame",
+        "exemple": "wa-ø-amé",
+        "glose": "il est venu"
+      },
+      {
+        "forme": "inaccompli assertif",
+        "morphème": "-d-ame",
+        "exemple": "wʋm-d-ame",
+        "glose": "il entend"
+      },
+      {
+        "forme": "accompli négatif",
+        "morphème": "ka-ø-ye",
+        "exemple": "ka wa ye",
+        "glose": "il n'est pas venu"
+      },
+      {
+        "forme": "impératif sg",
+        "morphème": "V!",
+        "exemple": "rɩ!",
+        "glose": "mange!"
+      },
+      {
+        "forme": "impératif pl",
+        "morphème": "V-y-yã",
+        "exemple": "rɩ-y-yã",
+        "glose": "mangez!"
+      },
+      {
+        "forme": "nominal d'action",
+        "morphème": "-re/-go/-ri",
+        "exemple": "tʋʋmre",
+        "glose": "le travail"
+      },
+      {
+        "forme": "causatif",
+        "morphème": "-ge",
+        "exemple": "zombge",
+        "glose": "faire monter"
+      },
+      {
+        "forme": "itératif",
+        "morphème": "redoublement partiel",
+        "exemple": "zoose",
+        "glose": "retirer promptement (itér. de zooge)"
+      }
+    ]
+  },
+  "classificateurs_nominaux": {
+    "note": "56 classificateurs formels documentés dans le corpus MALM (SRC-17 principalement). Les numéros 1-18 sont issus des lettres A-P, les 19-56 des lettres R-W. 15 classificateurs thématiques supplémentaires identifiés (préfixes lexicaux productifs).",
+    "formels": [
+      {
+        "numéro": 1,
+        "forme": "ka-",
+        "domaine": "mil / agriculture céréalière",
+        "composés_env": "~35",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 2,
+        "forme": "ko-/koom-",
+        "domaine": "eau / hydraulique / agriculture irriguée",
+        "composés_env": "~40",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 3,
+        "forme": "bõn-",
+        "domaine": "chose / objet / entité (productivité maximale)",
+        "composés_env": "50+",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 4,
+        "forme": "ligd-",
+        "domaine": "argent / finances / comptabilité",
+        "composés_env": "~35",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 5,
+        "forme": "nin-",
+        "domaine": "personne / corps / vision",
+        "composés_env": "~30",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 6,
+        "forme": "no-/noos-",
+        "domaine": "volaille / aviculture",
+        "composés_env": "~15",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 7,
+        "forme": "pe-",
+        "domaine": "ovins / moutons",
+        "composés_env": "~12",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 8,
+        "forme": "ro-/roog-",
+        "domaine": "architecture intérieure / pièces de maison",
+        "composés_env": "~12",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 9,
+        "forme": "we-/weo-",
+        "domaine": "brousse / savane / faune sauvage",
+        "composés_env": "~15",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 10,
+        "forme": "wẽn-",
+        "domaine": "Dieu / soleil / temps grammatical",
+        "composés_env": "~12",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 11,
+        "forme": "wũ-",
+        "domaine": "puits / eau souterraine",
+        "composés_env": "~8",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 12,
+        "forme": "zĩm-",
+        "domaine": "poissons / pêche",
+        "composés_env": "~10",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 13,
+        "forme": "na-/naam-",
+        "domaine": "chefferie / royauté / pouvoir",
+        "composés_env": "~25",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 14,
+        "forme": "pʋg-",
+        "domaine": "ventre / intérieur / épouse / grossesse / conscience",
+        "composés_env": "40+",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 15,
+        "forme": "ma-",
+        "domaine": "mère / famille maternelle",
+        "composés_env": "~15",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 16,
+        "forme": "bi-/biig-",
+        "domaine": "enfant / petit / jeune",
+        "composés_env": "~20",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 17,
+        "forme": "rog-",
+        "domaine": "naissance / accouchement / genre",
+        "composés_env": "~15",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 18,
+        "forme": "ra-/rã-",
+        "domaine": "temps / jour / saison",
+        "composés_env": "~18",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 19,
+        "forme": "rul-",
+        "domaine": "géométrie / ligne",
+        "composés_env": "11",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 20,
+        "forme": "rũm-",
+        "domaine": "animal / bétail / genou",
+        "composés_env": "15+",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 21,
+        "forme": "rʋʋd-",
+        "domaine": "urine / système urinaire",
+        "composés_env": "8",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 22,
+        "forme": "sa-",
+        "domaine": "ciel / météo / pluie",
+        "composés_env": "35+",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 23,
+        "forme": "sag-",
+        "domaine": "tô / alimentation cérémonielle",
+        "composés_env": "16+",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 24,
+        "forme": "seb-",
+        "domaine": "écriture / document / papier",
+        "composés_env": "20+",
+        "particularité": "Isomorphisme papier = vent (seb-go)",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 25,
+        "forme": "so-",
+        "domaine": "route / chemin / voie",
+        "composés_env": "18+",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 26,
+        "forme": "sũuri",
+        "domaine": "cœur / âme / émotions",
+        "composés_env": "35+",
+        "particularité": "Plus grand paradigme psychologique du corpus",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 27,
+        "forme": "yam-",
+        "domaine": "intelligence / bile / facultés mentales",
+        "composés_env": "13+",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 28,
+        "forme": "yaas-",
+        "domaine": "géométrie / angularité",
+        "composés_env": "11",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 29,
+        "forme": "yã-",
+        "domaine": "viscéral / anatomique",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 30,
+        "forme": "yel-",
+        "domaine": "éthique / discours moral",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 31,
+        "forme": "yɛtg-",
+        "domaine": "terminologie verbale / métalangage grammatical",
+        "composés_env": "6+",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 32,
+        "forme": "yĩn-",
+        "domaine": "corps / santé / être corporel",
+        "composés_env": "17+",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 33,
+        "forme": "yo-",
+        "domaine": "anatomie sexuelle / adultère",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 34,
+        "forme": "yõ-",
+        "domaine": "nez / souffle / vie",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 35,
+        "forme": "yʋʋm-",
+        "domaine": "année / temps long",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 36,
+        "forme": "yʋ-/yʋʋr-",
+        "domaine": "nom / réputation / identité",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 37,
+        "forme": "tab-",
+        "domaine": "tabac / culture / objets liés",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 38,
+        "forme": "tãn-",
+        "domaine": "terre / relief / construction",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 39,
+        "forme": "tẽn-/tẽng-",
+        "domaine": "territoire / toponymie / institutions",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 40,
+        "forme": "togs-",
+        "domaine": "discours / rapport / documentation",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 41,
+        "forme": "tõ-",
+        "domaine": "pouvoir / jonction / récolte",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 42,
+        "forme": "tus-",
+        "domaine": "grands nombres",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 43,
+        "forme": "tuk-",
+        "domaine": "creusage / agriculture",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 44,
+        "forme": "tug-",
+        "domaine": "feu / allumage / soin",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 45,
+        "forme": "tũ-",
+        "domaine": "suivi / signalétique / légalité",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 46,
+        "forme": "geel-",
+        "domaine": "numération / mathématiques",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 47,
+        "forme": "zu-",
+        "domaine": "tête / chance / destinée / états mentaux",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 48,
+        "forme": "zug-",
+        "domaine": "tête / sommet / soufflets / agitation",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 49,
+        "forme": "zul-/zulum-",
+        "domaine": "profondeur / inclinaison / nasse / vider",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 50,
+        "forme": "zũnd-/zũn-",
+        "domaine": "désordre / nasse / chenilles",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 51,
+        "forme": "tʋb-",
+        "domaine": "oreille / audition / anatomie auditive",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 52,
+        "forme": "tʋʋl-",
+        "domaine": "chaleur / vitesse / température",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 53,
+        "forme": "tʋʋm-",
+        "domaine": "travail / œuvre / activité / mission",
+        "composés_env": "?",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 54,
+        "forme": "wed-",
+        "domaine": "cheval / équitation / équidés",
+        "composés_env": "20+",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 55,
+        "forme": "wĩnd-/wĩnto-/wĩn-",
+        "domaine": "soleil / orientation / temps solaire",
+        "composés_env": "25+",
+        "particularité": "Points cardinaux définis par rapport au soleil",
+        "source": "SRC-17"
+      },
+      {
+        "numéro": 56,
+        "forme": "wob-/wobg-",
+        "domaine": "éléphant / trompe / membres inférieurs",
+        "composés_env": "20+",
+        "source": "SRC-17"
+      }
+    ],
+    "thématiques": [
+      {
+        "forme": "rõ-",
+        "domaine": "intestins / tube digestif / tuyau",
+        "source": "SRC-17"
+      },
+      {
+        "forme": "rã-",
+        "domaine": "animal domestique / troupeau",
+        "source": "SRC-17"
+      },
+      {
+        "forme": "rog-",
+        "domaine": "naissance / enfantement",
+        "source": "SRC-17"
+      },
+      {
+        "forme": "no-",
+        "domaine": "bouche / parole / bord",
+        "source": "SRC-17"
+      },
+      {
+        "forme": "nug-/nug-",
+        "domaine": "main / bras / côté",
+        "source": "SRC-17"
+      },
+      {
+        "forme": "nao-",
+        "domaine": "pied / trace / fois",
+        "source": "SRC-17"
+      },
+      {
+        "forme": "zɩ-",
+        "domaine": "sang / route intérieure (anatomie)",
+        "source": "SRC-17"
+      },
+      {
+        "forme": "wẽn-",
+        "domaine": "Dieu / soleil / comparatif",
+        "source": "SRC-17"
+      },
+      {
+        "forme": "kob-",
+        "domaine": "arbre / bois / produit forestier",
+        "source": "SRC-17"
+      },
+      {
+        "forme": "pãb-",
+        "domaine": "force / violence / puissance",
+        "source": "SRC-17"
+      },
+      {
+        "forme": "ligd-",
+        "domaine": "argent / valeur monétaire / comptabilité",
+        "source": "SRC-17"
+      },
+      {
+        "forme": "kom-",
+        "domaine": "famine / manque / enfant en bas âge",
+        "source": "SRC-17"
+      },
+      {
+        "forme": "yel-",
+        "domaine": "problème / affaire / chose / question morale",
+        "source": "SRC-17"
+      },
+      {
+        "forme": "bã-",
+        "domaine": "maladie / affliction / pathologie",
+        "source": "SRC-17/SRC-04"
+      },
+      {
+        "forme": "tɩɩm-",
+        "domaine": "médicament / remède / fétiche",
+        "source": "SRC-17"
+      }
+    ]
+  }
+}
